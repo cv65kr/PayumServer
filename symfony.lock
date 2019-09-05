@@ -5,9 +5,6 @@
     "clue/stream-filter": {
         "version": "v1.4.0"
     },
-    "composer/ca-bundle": {
-        "version": "1.1.0"
-    },
     "defuse/php-encryption": {
         "version": "v2.1.0"
     },
@@ -104,6 +101,9 @@
     "mikemccabe/json-patch-php": {
         "version": "0.1.0"
     },
+    "moneyphp/money": {
+        "version": "v3.2.1"
+    },
     "mongodb/mongodb": {
         "version": "1.2.0"
     },
@@ -184,15 +184,6 @@
     },
     "seld/jsonlint": {
         "version": "1.7.0"
-    },
-    "sensiolabs/security-checker": {
-        "version": "4.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "4.0",
-            "ref": "e65a105bf4cd5b1b79012ba029954927f05922e8"
-        }
     },
     "sofort/sofortlib-php": {
         "version": "3.3.1"

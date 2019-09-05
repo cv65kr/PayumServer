@@ -2,7 +2,7 @@
     "name": "payum/payum-server",
     "type": "project",
     "license": "MIT",
-    "description": "PHP 7.1+ Payment processing server. Setup once and rule them all",
+    "description": "PHP 7.2+ Payment processing server. Setup once and rule them all",
     "homepage": "https://github.com/Payum",
     "authors": [
         {
@@ -23,19 +23,18 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "ext-iconv": "*",
+        "php": "^7.2",
         "authorizenet/authorizenet": "^1.9",
         "defuse/php-encryption": "^2.1",
         "fp/klarna-invoice": "^0.1.2",
         "klarna/checkout": "^4.0",
         "makasim/yadm-bundle": "^0.2.1",
-        "mikemccabe/json-patch-php": "dev-master as 0.1.1",
+        "mikemccabe/json-patch-php": "^0.1",
         "nelmio/cors-bundle": "^1.5",
-        "omnipay/common": "^3.0@alpha",
+        "omnipay/common": "^3.0",
         "paypal/rest-api-sdk-php": "^1.13",
         "payum/offline": "^1.5",
-        "payum/omnipay-v3-bridge": "^1.0@alpha",
+        "payum/omnipay-v3-bridge": "^1.0",
         "payum/payum": "^1.5",
         "payum/payum-bundle": "^2.3",
         "php-http/guzzle6-adapter": "^1.1",
@@ -52,7 +51,6 @@
         "webmozart/json": "^1.2"
     },
     "require-dev": {
-        "sensiolabs/security-checker": "^4.1",
         "symfony/browser-kit": "^4.0",
         "symfony/css-selector": "^4.0",
         "symfony/dotenv": "^4.0",
@@ -88,8 +86,7 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd",
-            "security-checker security:check --end-point=http://security.sensiolabs.org/check_lock": "script"
+            "assets:install --symlink --relative %PUBLIC_DIR%": "symfony-cmd"
         },
         "post-install-cmd": [
             "@auto-scripts"

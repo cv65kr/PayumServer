@@ -3,8 +3,8 @@ FROM formapro/nginx-php-fpm:latest
 MAINTAINER Maksym Kotliar <kotlyar.maksim@gmail.com>
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends --no-install-suggests openssl pkg-config libssl-dev libsslcommon2-dev && \
-    apt-get install -y --no-install-recommends --no-install-suggests php7.1-mongodb php7.1-soap php7.1-xml && \
+    apt-get install -y --no-install-recommends --no-install-suggests openssl curl pkg-config libssl-dev libsslcommon2-dev && \
+    apt-get install -y --no-install-recommends --no-install-suggests php7.2-mongodb php7.2-soap php7.2-xml php7.2-mbstring php7.2-curl php7.2-intl && \
     rm -rf /var/lib/apt/lists/*
 
 ENV PAYUM_DEBUG 0
